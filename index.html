@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+<meta itemprop="name" content="Med Mtir's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a informatique science student. Explore my projects and contact me for any inquiries or collaborations.">
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+
+    <title>Med Mtir's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <label class="theme-switch" for="theme-switch" style="
+          position: fixed;
+          bottom: 20px; /* Adjust as needed */
+          right: 20px;  /* Adjust as needed */
+      ">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+        </label>        
+          <button type="button"  class="menu-btn">Menu</button>
+          
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#toolkit">My Toolkit</a></li>
+          <li class="nav-item"><a href="#work">Online Work</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+
+          <h1 class="h1">
+            <span>Hi, I'm Med Mtir</span>
+            <span>Computer Science Student</span>
+          </h1>
+          <p class="header-text">
+            A computer science student with a passion for professional gaming and a diverse range of hobbies,
+            including development,learn hacking, and editing 'photos, videos and gifs'.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact Me</a>
+            <a href="#work" class="btn btn-secondary">See My Projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="toolkit">
+        <div class="container">
+          <h2 class="h2">My Toolkit</h2>
+          <div class="logos">
+            <div class="logo-group">
+
+              <img
+                loading="lazy"
+                src="assets/images/skills/C++.png"
+                alt="Ideacraft"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/skills/ai.jpg"
+                alt="Golden grid"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/skills/ae.png"
+                alt="Theia"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/skills/ps.png"
+                alt="General motors"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/skills/pp.jpg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/skills/dj.png"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/skills/py.jpg"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/skills/html.webp"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/skills/shell.webp"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/skills/js.webp"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/skills/html.png"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/skills/php.png"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Online Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">E-Commerce Project</h3>
+                <p class="work-text">
+                  An E-Commerce project with dropshipping and MLM ("multi level marketing") system
+                </p>
+                <ol class="work-technologies">
+                  <li>Home</li>
+                  <li>Informatique</li>
+                  <li>Maison & Bureau</li>
+                  <li>Santé & Beauté</li>
+                  <li>Bibliothéque</li>
+                  <li>Autre</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://allinone.tn" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+                <a
+                   
+                    target="_blank"
+                    rel="noopener"
+                    
+                  >
+                    <img
+                      src="assets/images/logo.jpg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/allinone.png"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                I'm a computer science student with a passion for developing web interfaces using HTML, CSS, PHP, SQL, Django, and Python.
+                 I enjoy building projects from the ground up and am particularly focused on accessibility and performance.
+              </p>
+              <p class="contact-text">
+                In addition to my development work, I’m also a designer.
+                 I create logos, design graphics, produce video montages, and make GIFs.
+              </p>
+              <img
+                src="assets/images/signature.png"
+                alt="Syed Mohsin"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="Soon" >
+                  <img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Soon" >
+                  <img
+                    loading="lazy"
+                    src="assets/images/social-links/codepen.svg"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Soon" >
+                  <img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Soon" >
+                  <img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - ♥ Med Mtir ♥ -</p>
+          <p >♥
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
